@@ -25,16 +25,17 @@ final class ViewController: UIViewController, UITableViewDataSource {
 
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
-        tableView.backgroundColor = .cyan
         tableView.dataSource = self
         return tableView
     }()
+
+    private lazy var spinnerView =  UIActivityIndicatorView(style: .large)
 
     private var beerData: [BeerDTO] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemPink
+        view.backgroundColor = .white
         view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -43,6 +44,13 @@ final class ViewController: UIViewController, UITableViewDataSource {
             tableView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
         ])
+        tableView.addSubview(spinnerView)
+        spinnerView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            spinnerView.centerXAnchor.constraint(equalTo: tableView.centerXAnchor),
+            spinnerView.centerYAnchor.constraint(equalTo: tableView.centerYAnchor)
+        ])
+        spinnerView.startAnimating()
 
         let url: URL = URL(string: "https://api.punkapi.com/v2/beers")!
         URLSession.shared.dataTask(with: url, completionHandler: { data, response, error in
@@ -53,6 +61,7 @@ final class ViewController: UIViewController, UITableViewDataSource {
             self.beerData = try! decoder.decode([BeerDTO].self, from: data)
             DispatchQueue.main.async {
                 self.tableView.reloadData()
+                self.spinnerView.stopAnimating()
             }
         }).resume()
     }
