@@ -10,6 +10,7 @@
 		798ED7422AF0093400C817F6 /* BeerDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798ED7412AF0093400C817F6 /* BeerDTO.swift */; };
 		798ED7442AF0094400C817F6 /* BeerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798ED7432AF0094400C817F6 /* BeerService.swift */; };
 		798ED7462AF00E5C00C817F6 /* BeerTableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798ED7452AF00E5C00C817F6 /* BeerTableManager.swift */; };
+		798ED7482AF0115700C817F6 /* BeerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798ED7472AF0115700C817F6 /* BeerTableView.swift */; };
 		79ACB7032AD449210095A6C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ACB7022AD449210095A6C1 /* AppDelegate.swift */; };
 		79ACB7052AD449210095A6C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ACB7042AD449210095A6C1 /* SceneDelegate.swift */; };
 		79ACB7072AD449210095A6C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79ACB7062AD449210095A6C1 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 		798ED7412AF0093400C817F6 /* BeerDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDTO.swift; sourceTree = "<group>"; };
 		798ED7432AF0094400C817F6 /* BeerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerService.swift; sourceTree = "<group>"; };
 		798ED7452AF00E5C00C817F6 /* BeerTableManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableManager.swift; sourceTree = "<group>"; };
+		798ED7472AF0115700C817F6 /* BeerTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableView.swift; sourceTree = "<group>"; };
 		79ACB6FF2AD449210095A6C1 /* HSE Punk Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HSE Punk Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79ACB7022AD449210095A6C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79ACB7042AD449210095A6C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 				798ED7412AF0093400C817F6 /* BeerDTO.swift */,
 				798ED7432AF0094400C817F6 /* BeerService.swift */,
 				798ED7452AF00E5C00C817F6 /* BeerTableManager.swift */,
+				798ED7472AF0115700C817F6 /* BeerTableView.swift */,
 			);
 			path = BeerTable;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				798ED7462AF00E5C00C817F6 /* BeerTableManager.swift in Sources */,
 				798ED7422AF0093400C817F6 /* BeerDTO.swift in Sources */,
 				79ACB7032AD449210095A6C1 /* AppDelegate.swift in Sources */,
+				798ED7482AF0115700C817F6 /* BeerTableView.swift in Sources */,
 				79ACB7052AD449210095A6C1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
