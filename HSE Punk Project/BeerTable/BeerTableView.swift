@@ -10,11 +10,12 @@ import UIKit
 final class BeerTableView: UIView {
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
-//        tableView.dataSource = self
+        tableView.dataSource = tableManager
         return tableView
     }()
 
     private lazy var spinnerView =  UIActivityIndicatorView(style: .large)
+    private lazy var tableManager = BeerTableManager()
 
     init() {
         super.init(frame: .zero)
@@ -26,6 +27,12 @@ final class BeerTableView: UIView {
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+
+    func configure(with viewModel: [BeerDTO]) {
+        tableManager.tableData = viewModel
+        spinnerView.stopAnimating()
+        tableView.reloadData()
     }
 }
 
