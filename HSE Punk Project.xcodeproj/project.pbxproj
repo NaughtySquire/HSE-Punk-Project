@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		792804B52B028A0400539F90 /* BeerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792804B42B028A0400539F90 /* BeerDetailsViewController.swift */; };
 		792F4FE62AF01D4600EB43E5 /* BeerTableViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792F4FE52AF01D4600EB43E5 /* BeerTableViewControllerFactory.swift */; };
 		798ED7422AF0093400C817F6 /* BeerDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798ED7412AF0093400C817F6 /* BeerDTO.swift */; };
 		798ED7442AF0094400C817F6 /* BeerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798ED7432AF0094400C817F6 /* BeerService.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		792804B42B028A0400539F90 /* BeerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailsViewController.swift; sourceTree = "<group>"; };
 		792F4FE52AF01D4600EB43E5 /* BeerTableViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewControllerFactory.swift; sourceTree = "<group>"; };
 		798ED7412AF0093400C817F6 /* BeerDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDTO.swift; sourceTree = "<group>"; };
 		798ED7432AF0094400C817F6 /* BeerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerService.swift; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		792804B32B0289BF00539F90 /* BeerDetails */ = {
+			isa = PBXGroup;
+			children = (
+				792804B42B028A0400539F90 /* BeerDetailsViewController.swift */,
+			);
+			path = BeerDetails;
+			sourceTree = "<group>";
+		};
 		798ED73F2AF008FB00C817F6 /* BeerTable */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 		79ACB7012AD449210095A6C1 /* HSE Punk Project */ = {
 			isa = PBXGroup;
 			children = (
+				792804B32B0289BF00539F90 /* BeerDetails */,
 				798ED73F2AF008FB00C817F6 /* BeerTable */,
 				79ACB7022AD449210095A6C1 /* AppDelegate.swift */,
 				79ACB7042AD449210095A6C1 /* SceneDelegate.swift */,
@@ -159,6 +170,7 @@
 			files = (
 				79ACB7072AD449210095A6C1 /* BeerTableViewController.swift in Sources */,
 				798ED7442AF0094400C817F6 /* BeerService.swift in Sources */,
+				792804B52B028A0400539F90 /* BeerDetailsViewController.swift in Sources */,
 				798ED7462AF00E5C00C817F6 /* BeerTableManager.swift in Sources */,
 				798ED7422AF0093400C817F6 /* BeerDTO.swift in Sources */,
 				792F4FE62AF01D4600EB43E5 /* BeerTableViewControllerFactory.swift in Sources */,
